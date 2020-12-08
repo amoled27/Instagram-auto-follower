@@ -1,0 +1,22 @@
+{
+    "name": "Instagram Auto Follower",
+    "description": "searches for the hash tag and auto followes the user",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs",
+        "webNavigation", "*://*/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js",
+            "followAutomation.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
